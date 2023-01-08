@@ -23,7 +23,7 @@ public class AppBusiness {
     }
 
     public String getData(){
-        System.out.println(n1 + n2);
+       // System.out.println(n1 + n2);
         return country + " " + age;
     }
 

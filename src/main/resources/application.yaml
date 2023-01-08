@@ -1,0 +1,8 @@
+person:
+  name : jhonatan
+  lastname : mallqui
+  age : 23
+  country : <country:peru>
+
+number1 : 20
+number2 : 30

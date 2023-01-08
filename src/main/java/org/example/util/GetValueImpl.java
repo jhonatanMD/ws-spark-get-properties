@@ -19,14 +19,15 @@ public class  GetValueImpl{
 
         if(new File(FILE_PROPERTY).exists())
             properties.load(new FileInputStream(FILE_PROPERTY));
-        if(new File(FILE_YAML).exists()) {
+        else if(new File(FILE_YAML).exists()) {
             flag = Boolean.TRUE;
             properties.load(new FileInputStream(FILE_YAML));
         }
-        if(new File(FILE_YML).exists()){
+        else if(new File(FILE_YML).exists()){
             flag = Boolean.TRUE;
             properties.load(new FileInputStream(FILE_YML));
-        }
+        }else
+            return;
 
 
 
